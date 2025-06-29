@@ -68,14 +68,53 @@
         </div>
     </header>
 
-    
     <section class="page-header">
         <div class="container">
             <h1 class="page-title">Compétitions</h1>
-            <p class="page-subtitle">Découvrez toutes les compétitions à venir</p>
+            <p class="page-subtitle">Découvrez nos prochaines compétitions et inscrivez-vous</p>
         </div>
     </section>
 
+    <section class="filters-section">
+        <div class="container">
+            <h2 class="filters-title">Filtrer les compétitions</h2>
+            <div class="filters filters-container"></div>
+        </div>
+    </section>
+
+    <section class="results-section">
+        <div class="container">
+            <div class="results-grid" id="competitionsGrid"></div>
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-content">
+                    <h3>Aucune compétition trouvée</h3>
+                    <p>Essayez de modifier vos filtres pour voir plus de compétitions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="competitionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <button class="modal-close" onclick="closeCompetitionModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div>
+                        <div class="modal-date" id="modalDate"></div>
+                        <div class="modal-location" id="modalLocation"></div>
+                    </div>
+                    <div class="modal-tags" id="modalTags"></div>
+                </div>
+                <div class="modal-description" id="modalDescription"></div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-btn" id="modalRegisterLink">S'inscrire à la compétition</a>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -128,7 +167,8 @@
     <script src="js/menu.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/styles.js"></script>
-    <script src="js/auth_modal.js"></script>
     <script src="js/scroll-header.js"></script>
+    <script src="js/competitions.js"></script>
+    <script src="js/auth_modal.js"></script>
 </body>
 </html>

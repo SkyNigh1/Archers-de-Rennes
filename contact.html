@@ -68,14 +68,83 @@
         </div>
     </header>
 
-    
-    <section class="page-header">
-        <div class="container">
-            <h1 class="page-title">Contactez Nous !</h1>
-            <p class="page-subtitle">Vous pouvez nous contacter dès maintenant grâce au formulaire ci-dessous</p>
+    <!-- Page Header -->
+    <header class="page-header">
+        <h1 class="page-title">Contactez Nous !</h1>
+        <p class="page-subtitle">Vous pouvez nous contacter dès maintenant grâce au formulaire ci-dessous</p>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactLastName" class="form-label">Nom</label>
+                        <input type="text" id="contactLastName" class="form-input" required>
+                        <div class="error-message" id="contactLastNameError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactFirstName" class="form-label">Prénom</label>
+                        <input type="text" id="contactFirstName" class="form-input" required>
+                        <div class="error-message" id="contactFirstNameError"></div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactEmail" class="form-label">E-mail</label>
+                        <input type="email" id="contactEmail" class="form-input" required>
+                        <div class="error-message" id="contactEmailError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactEmailConfirm" class="form-label">Confirmer l'E-mail</label>
+                        <input type="email" id="contactEmailConfirm" class="form-input" required>
+                        <div class="error-message" id="contactEmailConfirmError"></div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="contactPhone" class="form-label">Téléphone</label>
+                        <input type="tel" id="contactPhone" class="form-input" placeholder="06 12 34 56 78" pattern="[0-9]{10}">
+                        <div class="error-message" id="contactPhoneError"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactOrganization" class="form-label">Organisme</label>
+                        <input type="text" id="contactOrganization" class="form-input">
+                        <div class="error-message" id="contactOrganizationError"></div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="contactRecipient" class="form-label">Destinataire</label>
+                    <select id="contactRecipient" class="form-input" required>
+                        <option value="">Sélectionnez un destinataire</option>
+                        <option value="club">Club</option>
+                        <option value="competition">Compétition</option>
+                        <option value="animation">Animation</option>
+                    </select>
+                    <div class="error-message" id="contactRecipientError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="contactSubject" class="form-label">Objet</label>
+                    <input type="text" id="contactSubject" class="form-input" required>
+                    <div class="error-message" id="contactSubjectError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="contactMessage" class="form-label">Message</label>
+                    <textarea id="contactMessage" class="form-input" rows="5" required></textarea>
+                    <div class="error-message" id="contactMessageError"></div>
+                </div>
+                <div class="checkbox-group">
+                    <label class="custom-checkbox">
+                        <input type="checkbox" id="contactConsent">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label for="contactConsent" class="checkbox-label">En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de contact et de la relation commerciale qui peut en découler.</label>
+                </div>
+                <button type="submit" class="submit-btn" id="contactSubmit" disabled>Envoyer</button>
+            </form>
         </div>
     </section>
-
 
     <!-- Footer -->
     <footer class="footer">
@@ -128,7 +197,8 @@
     <script src="js/menu.js"></script>
     <script src="js/animations.js"></script>
     <script src="js/styles.js"></script>
-    <script src="js/auth_modal.js"></script>
     <script src="js/scroll-header.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/auth_modal.js"></script>
 </body>
 </html>

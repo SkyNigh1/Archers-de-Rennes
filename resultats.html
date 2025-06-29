@@ -76,6 +76,60 @@
         </div>
     </section>
 
+    <!-- Contenu à insérer après la section page-header et avant le footer -->
+
+    <!-- Section de filtrage -->
+    <section class="filters-section">
+        <div class="container">
+            <h2 class="filters-title">Filtrer les résultats</h2>
+            <div class="filters-container filters">
+                <!-- Les boutons de filtrage seront générés automatiquement par JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Section des résultats -->
+    <section class="results-section">
+        <div class="container">
+            <div class="results-grid" id="resultsGrid">
+                
+            </div>
+
+            <!-- Message quand aucun résultat -->
+            <div class="no-results" id="noResults" style="display: none;">
+                <div class="no-results-content">
+                    <h3>Aucun résultat trouvé</h3>
+                    <p>Essayez de modifier vos filtres pour voir plus de résultats.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modale pour les détails des résultats -->
+    <div class="modal-overlay" id="resultModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <button class="modal-close" onclick="closeResultModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-info">
+                    <div class="modal-date-location">
+                        <div class="modal-date" id="modalDate"></div>
+                        <div class="modal-location" id="modalLocation"></div>
+                    </div>
+                    <div class="modal-tags" id="modalTags"></div>
+                </div>
+                <div class="modal-description" id="modalDescription"></div>
+                <div class="modal-stats" id="modalStats"></div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="modal-btn" id="modalResultsLink" target="_blank">
+                    Voir les résultats complets
+                </a>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -127,7 +181,8 @@
 
     <script src="js/menu.js"></script>
     <script src="js/animations.js"></script>
-    <script src="js/styles.js"></script>
+    <script src="js/styles.js"></script>        
+    <script src="js/resultats.js"></script>
     <script src="js/auth_modal.js"></script>
     <script src="js/scroll-header.js"></script>
 </body>
