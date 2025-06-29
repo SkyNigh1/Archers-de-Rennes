@@ -1,0 +1,423 @@
+/* ==========================================================================
+   HEADER & FOOTER STYLES
+   ========================================================================== */
+
+/* Header avec deux niveaux */
+.header {
+    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+}
+
+/* Première ligne : Logo + Titre + Auth */
+.header-top {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Image d'arrière-plan pour la section auth */
+.header-top::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 500px;
+    height: 100%;
+    background-image: url('../img/aestetic_lines.png'); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center right;
+    opacity: 0.4;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.header-top .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.header-bottom {
+    background: transparent;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+    max-height: 80px;
+    overflow: visible; /* Changé de hidden à visible pour éviter les coupures */
+    position: relative;
+    z-index: 999;
+}
+
+.header-bottom.hidden {
+    transform: translateY(-20px);
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden; /* Seulement hidden quand caché */
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.brand-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #f4cb5d;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    z-index: 3; /* S'assurer que les boutons restent cliquables */
+}
+
+.btn-auth {
+    padding: 8px 18px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.btn-auth:not(.btn-primary) {
+    color: white;
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.btn-auth:not(.btn-primary):hover {
+    background: rgba(255,255,255,0.1);
+    border-color: white;
+}
+
+.btn-primary {
+    background: #f4cb5d;
+    color: #333;
+}
+
+.btn-primary:hover {
+    background: #e8e4a6;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(244, 241, 201, 0.3);
+}
+
+/* Deuxième ligne : Navigation */
+.header-bottom .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav-menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    position: relative;
+}
+
+.nav-link {
+    display: block;
+    padding: 16px 14px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+    white-space: nowrap;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f4cb5d;
+    border-bottom-color: #f4cb5d;
+    background: rgba(244, 241, 201, 0.1);
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 220px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.dropdown-content a:hover {
+    background: #f4cb5d;
+    color: #333;
+}
+
+.dropdown-content a:first-child {
+    border-radius: 8px 8px 0 0;
+}
+
+.dropdown-content a:last-child {
+    border-radius: 0 0 8px 8px;
+    border-bottom: none;
+}
+
+.mobile-menu-toggle {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.mobile-menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+/* Footer */
+.footer {
+    background: #2c2c2c;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #f4cb5d;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f4cb5d;
+}
+
+.footer-social {
+    gap: 15px;
+}
+
+.footer-social-link {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social-link:hover {
+    color: #f4cb5d;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+.footer-bottom p {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN - HEADER & FOOTER
+   ========================================================================== */
+
+@media (max-width: 1024px) {
+    .nav-link {
+        padding: 16px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .header-top::after {
+        width: 400px;
+    }
+}
+
+@media (max-width: 900px) {
+    .nav-link {
+        padding: 16px 8px;
+        font-size: 0.75rem;
+    }
+    
+    .brand-title {
+        font-size: 1.1rem;
+    }
+    
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .header-top::after {
+        width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-top .container {
+        padding: 10px 20px;
+    }
+    
+    .auth-buttons {
+        display: none;
+    }
+    
+    .header-top::after {
+        display: none; /* Cache l'image sur mobile quand les boutons disparaissent */
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        display: flex;
+    }
+    
+    .brand-title {
+        font-size: 1rem;
+    }
+    
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-top .container {
+        padding: 8px 15px;
+    }
+    
+    .brand-title {
+        font-size: 0.9rem;
+    }
+    
+    .logo {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(135deg, rgba(44, 44, 44, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
+    color: white;
+    padding: 120px 0 60px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('img/archery-background.jpg') center/cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.page-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
+}
+
+.page-subtitle {
+    font-size: 1.4rem;
+    opacity: 0.9;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-weight: 300;
+}
