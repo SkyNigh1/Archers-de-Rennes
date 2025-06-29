@@ -1,0 +1,199 @@
+/* ==========================================================================
+   CONTACT PAGE STYLES
+   ========================================================================== */
+
+.contact-section {
+    padding: 60px 0;
+    background: #f8f9fa;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.form-input,
+textarea.form-input {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    background: #fafafa;
+    resize: vertical;
+}
+
+textarea.form-input {
+    min-height: 100px;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: #f4cb5d;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(244, 203, 93, 0.1);
+}
+
+.form-input.error {
+    border-color: #e74c3c;
+    background: #fdf2f2;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 0.8rem;
+    display: none;
+}
+
+.error-message.show {
+    display: block;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.checkbox-group.checked {
+    background: rgba(244, 203, 93, 0.1);
+    border-color: #f4cb5d;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    width: 20px;
+    height: 20px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background: #f4cb5d;
+    border-color: #f4cb5d;
+}
+
+.checkmark::after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    display: block;
+}
+
+.checkbox-label {
+    font-size: 0.9rem;
+    color: #555;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #f4cb5d 0%, #e8e4a6 100%);
+    color: #333;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    width: 100%;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(244, 203, 93, 0.4);
+}
+
+.submit-btn:disabled {
+    background: #e0e0e0;
+    color: #888;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.submit-btn:disabled:hover {
+    transform: none;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+    
+    .contact-container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-label {
+        font-size: 0.85rem;
+    }
+    
+    .form-input,
+    textarea.form-input {
+        font-size: 0.9rem;
+    }
+}

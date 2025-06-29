@@ -1,0 +1,542 @@
+/* ==========================================================================
+   COMPÉTITIONS PAGE STYLES - VERSION LISTE
+   ========================================================================== */
+
+/* Section de filtrage */
+.filters-section {
+    background: #f8f9fa;
+    padding: 40px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.filters-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.filter-btn {
+    padding: 12px 24px;
+    background: white;
+    border: 2px solid #e9ecef;
+    border-radius: 25px;
+    color: #666;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.filter-btn:hover {
+    border-color: #f4cb5d;
+    color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(244, 203, 93, 0.2);
+}
+
+.filter-btn.active {
+    background: #f4cb5d;
+    border-color: #f4cb5d;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Section des compétitions - VERSION LISTE */
+.results-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.results-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.result-card {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #f0f0f0;
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    gap: 24px;
+}
+
+.result-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-color: #f4cb5d;
+}
+
+/* Date à gauche */
+.result-date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #f4cb5d 0%, #e8e4a6 100%);
+    padding: 20px 16px;
+    border-radius: 12px;
+    min-width: 90px;
+    box-shadow: 0 4px 12px rgba(244, 203, 93, 0.3);
+    flex-shrink: 0;
+}
+
+.result-date .day {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1;
+}
+
+.result-date .month {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #666;
+    margin-top: 4px;
+}
+
+.result-date .year {
+    font-size: 0.75rem;
+    color: #888;
+    margin-top: 2px;
+}
+
+/* Contenu principal au centre */
+.result-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.result-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+    line-height: 1.3;
+}
+
+.result-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.location-icon {
+    font-size: 1rem;
+}
+
+.result-preview {
+    color: #777;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-top: 8px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* Tags en bas à droite avec décalage */
+.result-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 12px;
+    align-self: flex-start;
+}
+
+.result-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: flex-end;
+    margin-left: 20px;
+}
+
+.tag {
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #f4cb5d 0%, #e8e4a6 100%);
+    color: #000 !important;
+}
+
+/* Tags spécifiques - conservés pour compatibilité mais sans effet sur le fond */
+.tag-championnat, 
+.tag-national, 
+.tag-regional, 
+.tag-international, 
+.tag-club, 
+.tag-jeunes, 
+.tag-adultes,
+.tag-debutants,
+.tag-tir-campagne,
+.tag-tir-nature,
+.tag-tir-tae,
+.tag-tir-18m {
+    /* Pas de background spécifique, utilise le .tag par défaut */
+    color: #000 !important;
+}
+
+.result-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+    white-space: nowrap;
+}
+
+.result-btn:hover {
+    background: linear-gradient(135deg, #f4cb5d 0%, #e8e4a6 100%);
+    color: #333;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(244, 203, 93, 0.4);
+}
+
+/* Message aucune compétition */
+.no-results {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.no-results-content h3 {
+    font-size: 2rem;
+    color: #666;
+    margin-bottom: 16px;
+}
+
+.no-results-content p {
+    font-size: 1.1rem;
+    color: #888;
+}
+
+/* Animations de filtrage */
+.result-card.fade-out {
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: all 0.3s ease;
+}
+
+.result-card.fade-in {
+    opacity: 1;
+    transform: translateX(0);
+    transition: all 0.3s ease;
+}
+
+/* ==========================================================================
+   MODALE STYLES
+   ========================================================================== */
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background: white;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    transform: scale(0.8);
+    transition: transform 0.3s ease;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+
+.modal-overlay.active .modal-content {
+    transform: scale(1);
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/aestetic_lines.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.2;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.modal-header * {
+    position: relative;
+    z-index: 2;
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #f4cb5d;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #999;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 5px;
+    line-height: 1;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal-close:hover {
+    color: #333;
+}
+
+.modal-body {
+    padding: 0 30px 30px;
+}
+
+.modal-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.modal-date {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #f4cb5d;
+    margin-bottom: 8px;
+}
+
+.modal-location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #666;
+    font-size: 1rem;
+}
+
+.modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.modal-description {
+    background: #f8f9fa;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    border-left: 4px solid #f4cb5d;
+}
+
+.modal-description p {
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+    font-size: 1rem;
+}
+
+.modal-footer {
+    padding: 0 30px 30px;
+    text-align: center;
+}
+
+.modal-btn {
+    display: inline-block;
+    padding: 16px 32px;
+    background: linear-gradient(135deg, #f4cb5d 0%, #e8e4a6 100%);
+    color: #000 !important;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(244, 203, 93, 0.3);
+}
+
+.modal-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(244, 203, 93, 0.4);
+    background: linear-gradient(135deg, #e8e4a6 0%, #f4cb5d 100%);
+    color: #000 !important;
+}
+
+/* ==========================================================================
+   RESPONSIVE DESIGN
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .filters-container {
+        gap: 8px;
+    }
+    
+    .filter-btn {
+        padding: 10px 16px;
+        font-size: 0.8rem;
+    }
+    
+    .result-card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .result-date {
+        align-self: flex-start;
+        min-width: 80px;
+    }
+    
+    .result-footer {
+        align-items: stretch;
+        margin-top: 16px;
+    }
+    
+    .result-tags {
+        justify-content: flex-start;
+        margin-left: 0;
+    }
+    
+    .result-btn {
+        align-self: stretch;
+        text-align: center;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 20px;
+    }
+    
+    .modal-header {
+        padding: 20px 20px 0;
+    }
+    
+    .modal-title {
+        font-size: 1.4rem;
+    }
+    
+    .modal-body {
+        padding: 0 20px 20px;
+    }
+    
+    .modal-footer {
+        padding: 0 20px 20px;
+    }
+    
+    .modal-info {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .modal-tags {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .filters-title {
+        font-size: 1.6rem;
+    }
+    
+    .filter-btn {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+    }
+    
+    .result-card {
+        padding: 16px;
+        gap: 16px;
+    }
+    
+    .result-date {
+        padding: 16px 12px;
+        min-width: 70px;
+    }
+    
+    .result-date .day {
+        font-size: 1.6rem;
+    }
+    
+    .result-title {
+        font-size: 1.3rem;
+    }
+    
+    .result-preview {
+        font-size: 0.9rem;
+    }
+    
+    .modal-title {
+        font-size: 1.2rem;
+    }
+}

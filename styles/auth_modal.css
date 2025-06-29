@@ -52,6 +52,7 @@
     border-radius: 20px 20px 0 0;
     position: relative;
     overflow: hidden;
+    display: block; /* Assure que le flux par défaut est utilisé */
 }
 
 .modal-header::after {
@@ -78,7 +79,7 @@
 .modal-title {
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Ajoute un espace entre le titre et le sous-titre */
     color: #f4cb5d;
 }
 
@@ -86,6 +87,7 @@
     font-size: 0.95rem;
     opacity: 0.9;
     font-weight: 300;
+    margin: 0; /* Réinitialise les marges par défaut */
 }
 
 /* Close Button */
