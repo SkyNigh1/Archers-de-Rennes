@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archers de Rennes</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/partenaires.css">
+    <link rel="stylesheet" href="styles/auth_modal.css">
+    <link rel="stylesheet" href="styles/header-footer.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="nav-brand">
+                    <img src="img/logo_yellow_new.png" alt="Archers de Rennes Logo" class="logo">
+                    <span class="brand-title">ARCHERS DE RENNES</span>
+                </div>
+                <div class="auth-buttons">
+                    <a href="#login" class="btn-auth" data-modal="loginModal">Connexion</a>
+                    <a href="#register" class="btn-auth btn-primary" data-modal="registerModal">Créer un compte</a>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="container">
+                <nav class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="nav-link">ACCUEIL</a></li>
+                        <li class="dropdown">
+                            <a class="nav-link">DÉCOUVRIR</a>
+                            <div class="dropdown-content">
+                                <a href="qui-sommes-nous.html">Qui sommes nous ?</a>
+                                <a href="installations.html" class="active">Installations</a>
+                                <a href="partenaires.html">Partenaires</a>
+                                <a href="organigramme.html">Organigramme</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link">VIE AU CLUB</a>
+                            <div class="dropdown-content">
+                                <a href="articles.html">Articles</a>
+                                <a href="assemblee-generale.html">Assemblée générale</a>
+                            </div>
+                        </li>
+                        <li><a href="competitions.html" class="nav-link">COMPÉTITIONS</a></li>
+                        <li><a href="resultats.html" class="nav-link">RÉSULTATS</a></li>
+                        <li><a href="stages.html" class="nav-link">STAGES</a></li>
+                        <li class="dropdown">
+                            <a class="nav-link">ANIMATIONS</a>
+                            <div class="dropdown-content">
+                                <a href="prestations.html">Prestations</a>
+                                <a href="groupes-scolaire.html">Groupes scolaires et Associations</a>
+                                <a href="fit-archery.html">Fit'Archery</a>
+                            </div>
+                        </li>
+                        <li><a href="contact.html" class="nav-link">CONTACTEZ NOUS</a></li>
+                    </ul>
+                </nav>
+                <button class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Partenaires</h1>
+            <p class="page-subtitle">Découvrez les différents partenariats de notre club</p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#protection">Protection des données</a></li>
+                        <li><a href="#plan">Plan du site</a></li>
+                        <li><a href="#mentions">Mentions Légales</a></li>
+                        <li><a href="#cookies">Gestion des cookies</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Archers de Rennes</p>
+                    <p>Rennes, France</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Réseaux Sociaux</h4>
+                    <div class="footer-social">
+                        <a href="#" class="footer-social-link">
+                            <span class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 512 512">
+                                    <path d="M 512 257 Q 511 185 477 128 L 477 128 L 477 128 Q 443 70 385 36 L 385 36 L 385 36 Q 328 2 256 1 Q 184 2 127 36 Q 69 70 35 128 Q 1 185 0 257 Q 2 349 55 416 Q 109 483 194 506 L 194 335 L 194 335 L 141 335 L 141 335 L 141 257 L 141 257 L 194 257 L 194 257 L 194 223 L 194 223 Q 193 94 319 96 Q 332 96 349 98 Q 365 100 375 102 L 375 173 L 375 173 Q 365 172 345 172 Q 314 172 300 185 Q 287 199 287 229 L 287 257 L 287 257 L 371 257 L 371 257 L 356 335 L 356 335 L 287 335 L 287 335 L 287 511 L 287 511 Q 384 497 447 427 Q 510 357 512 257 L 512 257 L 512 257 Z" />
+                                </svg>
+                            </span>
+                            Facebook
+                        </a>
+                        <br/>
+                        <a href="#" class="footer-social-link">
+                            <span class="social-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="1em" fill="currentColor" viewBox="0 0 512 512">
+                                    <path d="M 256 124.57142857142857 Q 200 125.71428571428571 163.42857142857142 163.42857142857142 L 163.42857142857142 163.42857142857142 L 163.42857142857142 163.42857142857142 Q 125.71428571428571 200 124.57142857142857 256 Q 125.71428571428571 312 163.42857142857142 348.57142857142856 Q 200 386.2857142857143 256 387.42857142857144 Q 312 386.2857142857143 348.57142857142856 348.57142857142856 Q 386.2857142857143 312 387.42857142857144 256 Q 386.2857142857143 200 348.57142857142856 163.42857142857142 Q 312 125.71428571428571 256 124.57142857142857 L 256 124.57142857142857 Z M 256 341.7142857142857 Q 219.42857142857142 340.57142857142856 195.42857142857142 316.57142857142856 L 195.42857142857142 316.57142857142856 L 195.42857142857142 316.57142857142856 Q 171.42857142857142 292.57142857142856 170.28571428571428 256 Q 171.42857142857142 219.42857142857142 195.42857142857142 195.42857142857142 Q 219.42857142857142 171.42857142857142 256 170.28571428571428 Q 292.57142857142856 171.42857142857142 316.57142857142856 195.42857142857142 Q 340.57142857142856 219.42857142857142 341.7142857142857 256 Q 340.57142857142856 292.57142857142856 316.57142857142856 316.57142857142856 Q 292.57142857142856 340.57142857142856 256 341.7142857142857 L 256 341.7142857142857 Z M 424 118.85714285714286 Q 420.57142857142856 147.42857142857142 393.14285714285717 149.71428571428572 Q 364.57142857142856 147.42857142857142 362.2857142857143 118.85714285714286 Q 362.2857142857143 106.28571428571429 371.42857142857144 97.14285714285714 Q 379.42857142857144 89.14285714285714 393.14285714285717 89.14285714285714 Q 405.7142857142857 89.14285714285714 414.85714285714283 97.14285714285714 Q 422.85714285714283 106.28571428571429 424 118.85714285714286 L 424 118.85714285714286 Z M 510.85714285714283 150.85714285714286 Q 510.85714285714283 88 468.57142857142856 43.42857142857143 Q 424 1.1428571428571428 362.2857142857143 1.1428571428571428 Q 339.42857142857144 0 297.14285714285717 0 Q 256 0 214.85714285714286 0 Q 172.57142857142858 0 150.85714285714286 1.1428571428571428 Q 89.14285714285714 1.1428571428571428 43.42857142857143 43.42857142857143 Q 1.1428571428571428 88 2.2857142857142856 149.71428571428572 Q 0 172.57142857142858 0 214.85714285714286 Q 0 256 0 297.14285714285717 Q 0 338.2857142857143 2.2857142857142856 361.14285714285717 Q 1.1428571428571428 424 43.42857142857143 468.57142857142856 Q 88 510.85714285714283 150.85714285714286 509.7142857142857 Q 172.57142857142858 510.85714285714283 214.85714285714286 512 Q 256 512 297.14285714285717 512 Q 339.42857142857144 510.85714285714283 362.2857142857143 509.7142857142857 Q 424 510.85714285714283 468.57142857142856 468.57142857142856 Q 510.85714285714283 424 510.85714285714283 361.14285714285717 Q 512 338.2857142857143 512 297.14285714285717 Q 512 256 512 214.85714285714286 Q 512 172.57142857142858 510.85714285714283 149.71428571428572 L 510.85714285714283 150.85714285714286 Z M 456 406.85714285714283 Q 441.14285714285717 441.14285714285717 406.85714285714283 456 Q 384 464 345.14285714285717 465.14285714285717 Q 306.2857142857143 466.2857142857143 274.2857142857143 466.2857142857143 Q 264 466.2857142857143 256 466.2857142857143 Q 248 466.2857142857143 237.71428571428572 466.2857142857143 Q 205.71428571428572 466.2857142857143 166.85714285714286 465.14285714285717 Q 129.14285714285714 464 105.14285714285714 456 Q 70.85714285714286 441.14285714285717 56 406.85714285714283 Q 48 382.85714285714283 46.857142857142854 345.14285714285717 Q 45.714285714285715 306.2857142857143 45.714285714285715 274.2857142857143 Q 45.714285714285715 264 45.714285714285715 256 Q 45.714285714285715 248 45.714285714285715 237.71428571428572 Q 45.714285714285715 205.71428571428572 46.857142857142854 166.85714285714286 Q 48 128 56 105.14285714285714 Q 70.85714285714286 70.85714285714286 105.14285714285714 56 Q 129.14285714285714 48 166.85714285714286 46.857142857142854 Q 205.71428571428572 44.57142857142857 237.71428571428572 45.714285714285715 Q 248 45.714285714285715 256 45.714285714285715 Q 264 45.714285714285715 274.2857142857143 45.714285714285715 Q 306.2857142857143 45.714285714285715 345.14285714285717 46.857142857142854 Q 384 48 406.85714285714283 56 Q 441.14285714285717 70.85714285714286 456 105.14285714285714 Q 464 128 465.14285714285717 166.85714285714286 Q 467.42857142857144 205.71428571428572 466.2857142857143 237.71428571428572 Q 466.2857142857143 248 466.2857142857143 256 Q 466.2857142857143 264 466.2857142857143 274.2857142857143 Q 467.42857142857144 306.2857142857143 465.14285714285717 345.14285714285717 Q 464 384 456 406.85714285714283 L 456 406.85714285714283 Z" />
+                                </svg>
+                            </span>
+                            Instagram
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Archers de Rennes - Tous droits réservés</p>
+                <p>Site non-officiel produit par SkyNight</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/styles.js"></script>
+    <script src="js/auth_modal.js"></script>
+    <script src="js/scroll-header.js"></script>
+</body>
+</html>
