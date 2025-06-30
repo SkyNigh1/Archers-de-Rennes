@@ -1,0 +1,214 @@
+/* ==========================================================================
+   ORGANIGRAMME PAGE STYLES
+   ========================================================================== */
+
+/* Organigramme Section */
+.organigramme-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.organigramme-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Title */
+.organigramme-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+.organigramme-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Chart */
+.organigramme-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Level */
+.organigramme-level {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.organigramme-level-1 {
+    justify-content: center;
+    gap: 50px;
+}
+
+.organigramme-level-3 {
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Node */
+.organigramme-node {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    width: 180px;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.organigramme-node:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.node-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.node-photo {
+    margin: 0 auto 10px;
+}
+
+.node-photo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #f4cb5d;
+}
+
+/* Updated Typography */
+.node-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0;
+}
+
+.node-role {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    margin: 0;
+}
+
+/* Connectors */
+.organigramme-connector {
+    width: 2px;
+    height: 30px;
+    background: #f4cb5d;
+    margin: 0 auto;
+    position: relative;
+}
+
+.organigramme-connector-main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -300px;
+    width: 600px;
+    height: 2px;
+    background: #f4cb5d;
+    transform: translateY(-50%);
+}
+
+.organigramme-connector-sport::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100px;
+    width: 200px;
+    height: 2px;
+    background: #f4cb5d;
+    transform: translateY(-50%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .organigramme-section {
+        padding: 40px 0;
+    }
+
+    .organigramme-container {
+        padding: 0 15px;
+    }
+
+    .organigramme-title {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    .organigramme-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .organigramme-level {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .organigramme-level-1 {
+        gap: 20px;
+    }
+
+    .organigramme-level-3 {
+        gap: 15px;
+    }
+
+    .organigramme-node {
+        width: 200px;
+    }
+
+    .organigramme-connector-main::before,
+    .organigramme-connector-sport::before {
+        display: none; /* Hide horizontal connectors on small screens */
+    }
+
+    .organigramme-connector {
+        height: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .organigramme-title {
+        font-size: 1.4rem;
+    }
+
+    .organigramme-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .organigramme-node {
+        width: 180px;
+    }
+
+    .node-photo img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .node-name {
+        font-size: 1.3rem;
+    }
+
+    .node-role {
+        font-size: 0.95rem;
+    }
+}

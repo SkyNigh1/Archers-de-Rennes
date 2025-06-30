@@ -1,38 +1,108 @@
-/* Page Header */
-.page-header {
-    background: linear-gradient(135deg, rgba(44, 44, 44, 0.95) 0%, rgba(26, 26, 26, 0.95) 100%);
-    color: white;
-    padding: 120px 0 60px;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
+/* ==========================================================================
+   QUI SOMMES-NOUS PAGE STYLES
+   ========================================================================== */
+
+/* About Section */
+.about-section {
+    padding: 60px 0;
+    background: white;
 }
 
-.page-header::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('img/archery-background.jpg') center/cover;
-    opacity: 0.3;
-    z-index: -1;
-}
-
-.page-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-    letter-spacing: 2px;
-}
-
-.page-subtitle {
-    font-size: 1.4rem;
-    opacity: 0.9;
+.about-container {
     max-width: 800px;
     margin: 0 auto;
-    line-height: 1.5;
-    font-weight: 300;
+    padding: 0 20px;
+}
+
+/* Title */
+.about-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+.about-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Content */
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin: 0;
+}
+
+/* Highlight for key sentences */
+.about-content p:nth-child(3),
+.about-content p:nth-child(5) {
+    font-weight: 600;
+    color: #333;
+    background: #f8f9fa;
+    padding: 16px;
+    border-radius: 12px;
+    border-left: 4px solid #f4cb5d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        padding: 40px 0;
+    }
+
+    .about-container {
+        padding: 0 15px;
+    }
+
+    .about-title {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    .about-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .about-content p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .about-content p:nth-child(3),
+    .about-content p:nth-child(5) {
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-title {
+        font-size: 1.4rem;
+    }
+
+    .about-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .about-content p {
+        font-size: 0.9rem;
+    }
+
+    .about-content p:nth-child(3),
+    .about-content p:nth-child(5) {
+        padding: 10px;
+    }
 }

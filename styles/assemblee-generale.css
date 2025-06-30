@@ -1,0 +1,282 @@
+/* ==========================================================================
+   ASSEMBLEE GENERALE PAGE STYLES
+   ========================================================================== */
+
+/* Assemblies Section */
+.assemblies-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.assemblies-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Title */
+.assemblies-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+.assemblies-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Announcement */
+.assemblies-announcement {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.announcement-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.announcement-date {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.announcement-location {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0 0 15px;
+}
+
+.announcement-letter {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.announcement-letter p {
+    margin: 0 0 10px;
+}
+
+.announcement-letter a {
+    color: #f4cb5d;
+    text-decoration: none;
+}
+
+.announcement-letter a:hover {
+    text-decoration: underline;
+}
+
+/* Billets */
+.assemblies-billets {
+    margin-bottom: 40px;
+}
+
+.billets-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.billets-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #f8f9fa;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.billets-table th,
+.billets-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.billets-table th {
+    background: #f4cb5d;
+    color: white;
+    font-weight: 600;
+}
+
+.billets-table td {
+    color: #333;
+}
+
+/* PDF */
+.assemblies-pdf {
+    margin-bottom: 40px;
+}
+
+.pdf-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f4cb5d;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.pdf-link:hover {
+    background: #e0b44d;
+}
+
+/* Où et Quand */
+.assemblies-where-when {
+    margin-bottom: 40px;
+}
+
+.where-when-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.where-when-date {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.where-when-location {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 0;
+}
+
+/* En Savoir Plus */
+.assemblies-more {
+    margin-bottom: 40px;
+}
+
+.more-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.more-details {
+    font-size: 1rem;
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .assemblies-section {
+        padding: 40px 0;
+    }
+
+    .assemblies-container {
+        padding: 0 15px;
+    }
+
+    .assemblies-title {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    .assemblies-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .assemblies-announcement {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+
+    .announcement-heading,
+    .billets-heading,
+    .where-when-heading,
+    .more-heading {
+        font-size: 1.3rem;
+    }
+
+    .announcement-date,
+    .where-when-date {
+        font-size: 1.2rem;
+    }
+
+    .announcement-location,
+    .where-when-location {
+        font-size: 1rem;
+    }
+
+    .announcement-letter,
+    .more-details {
+        font-size: 0.95rem;
+    }
+
+    .billets-table th,
+    .billets-table td {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+
+    .pdf-link {
+        padding: 8px 15px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .assemblies-title {
+        font-size: 1.4rem;
+    }
+
+    .assemblies-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .announcement-heading,
+    .billets-heading,
+    .where-when-heading,
+    .more-heading {
+        font-size: 1.2rem;
+    }
+
+    .announcement-date,
+    .where-when-date {
+        font-size: 1.1rem;
+    }
+
+    .announcement-location,
+    .where-when-location {
+        font-size: 0.9rem;
+    }
+
+    .announcement-letter,
+    .more-details {
+        font-size: 0.9rem;
+    }
+
+    .billets-table th,
+    .billets-table td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    .pdf-link {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}

@@ -395,14 +395,15 @@
 
 .page-header::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('img/archery-background.jpg') center/cover;
-    opacity: 0.3;
+    background: url('../img/archery-background.jpg') center/cover;
+    opacity: 0.85;
     z-index: -1;
+    background-attachment: fixed;
 }
 
 .page-title {
