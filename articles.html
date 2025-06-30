@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Archers de Rennes</title>
     <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/auth_modal.css">
     <link rel="stylesheet" href="styles/articles.css">
+    <link rel="stylesheet" href="styles/auth_modal.css">
     <link rel="stylesheet" href="styles/header-footer.css">
 </head>
 <body>
@@ -76,6 +76,31 @@
         </div>
     </section>
 
+    <section class="articles-section">
+        <div class="articles-container">
+            <div class="articles-list" id="articlesList"></div>
+        </div>
+    </section>
+
+    <section class="modal-overlay" id="articleModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle"></h2>
+                <button class="modal-close" onclick="closeArticleModal()">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modalImage" src="" alt="Article image">
+                </div>
+                <div class="modal-info">
+                    <div>
+                        <p class="modal-date" id="modalDate"></p>
+                    </div>
+                </div>
+                <div class="modal-description" id="modalText"></div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -130,5 +155,6 @@
     <script src="js/styles.js"></script>
     <script src="js/auth_modal.js"></script>
     <script src="js/scroll-header.js"></script>
+    <script src="js/articles.js"></script>
 </body>
 </html>
