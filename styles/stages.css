@@ -1,0 +1,163 @@
+/* ==========================================================================
+   STAGES PAGE STYLES
+   ========================================================================== */
+
+/* Stages Section */
+.stages-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.stages-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Title */
+.stages-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Subtitle */
+.stages-subtitle {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* Stages List */
+.stages-list {
+    list-style: none;
+    padding: 0;
+}
+
+/* Stage Item */
+.stage-item {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stage-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.stage-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 0 10px;
+}
+
+.stage-date {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 15px;
+}
+
+.stage-description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+    margin: 0 0 20px;
+}
+
+.inscription-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #f4cb5d;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.inscription-btn:hover {
+    background: #e0b44d;
+}
+
+.inscription-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.inscription-btn:disabled:hover {
+    background: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .stages-section {
+        padding: 40px 0;
+    }
+
+    .stages-container {
+        padding: 0 15px;
+    }
+
+    .stages-title {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+
+    .stages-subtitle {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .stage-title {
+        font-size: 1.2rem;
+    }
+
+    .stage-date {
+        font-size: 0.95rem;
+    }
+
+    .stage-description {
+        font-size: 0.9rem;
+    }
+
+    .inscription-btn {
+        padding: 6px 12px;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .stages-title {
+        font-size: 1.4rem;
+    }
+
+    .stages-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .stage-title {
+        font-size: 1.1rem;
+    }
+
+    .stage-date {
+        font-size: 0.9rem;
+    }
+
+    .stage-description {
+        font-size: 0.85rem;
+    }
+
+    .inscription-btn {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+}
