@@ -11,21 +11,21 @@ document.addEventListener('DOMContentLoaded', function() {
             subtitle: "Les Archers de Rennes continuent de briller sur la scène internationale",
             image: "img/championship-photo.jpg",
             buttonText: "Voir nos résultats",
-            buttonLink: "#resultats"
+            buttonLink: "resultats.html"
         },
         {
             title: "2 médailles rennaises aux Championnats de France Salle 2025",
             subtitle: "Nos archers ont brillé lors des Championnats de France en salle",
             image: "img/france-championship-2025.jpeg", 
             buttonText: "Lire l'article",
-            buttonLink: "#actualites"
+            buttonLink: "articles.html"
         },
         {
             title: "Les archers rennais brillent au Championnat de France Universitaire 2025",
             subtitle: "Excellents résultats de nos étudiants archers",
             image: "img/university-championship.jpg",
             buttonText: "Découvrir les résultats",
-            buttonLink: "#resultats"
+            buttonLink: "resultats.html"
         }
     ];
     
