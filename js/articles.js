@@ -6,24 +6,31 @@
 const articles = [
     {
         id: 1,
-        image: "img/concours.jpg",
-        title: "Championnat Régional 2025",
-        date: "2025-06-15",
-        text: "Le club organise le championnat régional le 15 juin 2025. Venez nombreux encourager nos archers ! Cet événement promet une compétition acharnée avec les meilleurs archers de la région, dans une ambiance conviviale et festive."
+        image: "img/france-championship-2025.jpeg",
+        title: "2 médailles rennaises aux Championnats de France Salle 2025",
+        date: "2025-03-04",
+        text: "Lors des Championnats de France en salle 2025, les Archers de Rennes ont une fois de plus démontré leur excellence. Nos archers ont décroché deux médailles, confirmant leur talent et leur détermination. Cette performance exceptionnelle met en lumière le travail acharné de nos compétiteurs et de leurs entraîneurs. Venez découvrir les détails de cet événement et soutenir nos archers lors des prochaines compétitions !"
     },
     {
         id: 2,
-        image: "img/championship-photo.jpg",
-        title: "4ème Victoire au championnat d'Europe",
-        date: "2024-10-08",
-        text: "Du 4 au 6 octobre 2024, à Ruse en Bulgarie, s’est déroulée la prestigieuse Coupe d’Europe des clubs. Ce rendez-vous incontournable du tir à l’arc a vu les Archers de Rennes inscrire à nouveau leur nom au sommet du palmarès européen. L’équipe masculine, composée de Nicolas Bernardi, Jonathan Vetter, Iewan Verzier-Rousson et dirigée par l’entraîneur Pierrick Leparc, a brillamment décroché son quatrième titre continental, confirmant leur statut de référence dans ce sport exigeant. Dans une finale à couper le souffle, Rennes a affronté Nîmes, une équipe redoutable alignant pas moins de deux médaillés olympiques des Jeux de Paris 2024. Le duel s’annonçait intense, et il a tenu toutes ses promesses. Au terme d'une rencontre serrée et pleine de suspense, les Rennais ont su faire preuve de sang-froid et de précision pour l'emporter, démontrant une fois encore leur maîtrise technique et leur cohésion d’équipe.Cette nouvelle consécration européenne renforce encore davantage la réputation des Archers de Rennes sur la scène internationale et inspire les générations futures de notre association.Bien que l’équipe féminine des Archers de Rennes n’ait pas décroché le podium cette fois-ci, terminant à une honorable 8ème place, leur participation à cette compétition est tout aussi remarquable. Ces résultats témoignent de leur potentiel et de leur ténacité. Elles sont la promesse de belles performances à venir et continuent à porter haut les couleurs de Rennes sur la scène internationale.Nous adressons nos plus vives félicitations à l’ensemble de l’équipe masculine pour ce 4ème titre européen, ainsi qu'à l’équipe féminine pour leur engagement sans faille. Nous remercions également nos partenaires et supporters, qui nous accompagnent à chaque étape de cette aventure sportive. Vous pouvez revivre la finale palpitante Rennes – Nîmes en visionnant ce lien.Pour plus d'informations sur notre association et nos prochaines compétitions, n’hésitez pas à nous contacter par mail à l’adresse suivante : contact@archersderennes.com.Merci et bravo à tous pour votre engagement sans faille dans le développement du tir à l’arc !"
+        image: "img/university-championship.jpg",
+        title: "Les archers rennais brillent au Championnat de France Universitaire 2025",
+        date: "2025-02-08",
+        text: "Nos étudiants archers des Archers de Rennes ont brillé lors du Championnat de France Universitaire 2025. Leur performance remarquable a permis de hisser les couleurs de Rennes sur le podium. Cette compétition a mis en avant la polyvalence et la passion de nos jeunes talents, qui conjuguent études et pratique intensive du tir à l’arc. Félicitations à eux et à leurs encadrants pour ces résultats prometteurs !"
     },
     {
         id: 3,
-        image: "img/tir-jeunes.jpg",
-        title: "Nouveau Cours pour Jeunes",
-        date: "2025-07-01",
-        text: "Un nouveau cours pour les jeunes archers débutera le 1er juillet 2025. Inscriptions ouvertes ! Ce programme est conçu pour initier les jeunes au tir à l'arc dans un cadre ludique et sécurisé, encadré par nos entraîneurs expérimentés."
+        image: "img/championship-photo.jpg",
+        title: "Les Archers de Rennes, Champions d'Europe pour la Quatrième Fois",
+        date: "2024-10-08",
+        text: "Du 4 au 6 octobre 2024, à Ruse en Bulgarie, les Archers de Rennes ont écrit une nouvelle page de leur histoire en remportant leur quatrième titre européen lors de la Coupe d’Europe des clubs. Dans une finale épique contre Nîmes, notre équipe masculine, emmenée par Nicolas Bernardi, Jonathan Vetter, Iewan Verzier-Rousson et leur entraîneur Pierrick Leparc, a fait preuve d’une précision et d’une cohésion exemplaires. Malgré une belle prestation, l’équipe féminine termine à une honorable 8ème place. Ce succès renforce la réputation des Archers de Rennes sur la scène internationale. Merci à nos supporters et partenaires pour leur soutien indéfectible !"
+    },
+    {
+        id: 4,
+        image: "img/tir-campagne.jpg",
+        title: "Championnat de France - Tir en Campagne par Equipe de Club",
+        date: "2024-09-25",
+        text: "Les Archers de Rennes ont organisé avec succès le Championnat de France de Tir en Campagne par Équipe de Club. Cet événement a réuni les meilleurs clubs nationaux dans une compétition mémorable, marquée par l’esprit sportif et l’engagement de nos archers. Un grand merci à tous les participants, bénévoles et partenaires qui ont fait de cette journée une réussite !"
     }
 ];
 
